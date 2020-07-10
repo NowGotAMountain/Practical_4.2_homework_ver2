@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-public boolean one,two,three,four,five;
+public boolean first,second,third,forth,fifth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,19 +21,19 @@ public boolean one,two,three,four,five;
     {
         StringBuffer toppings = new
                 StringBuffer().append(getString(R.string.toast_text));
-        if  (one) {
+        if  (first) {
             toppings.append(" "+getString(R.string.chocolate_syrup_text));
         }
-        if  (two) {
+        if  (second) {
             toppings.append(" "+getString(R.string.sprinkles_text));
         }
-        if  (three) {
+        if  (third) {
             toppings.append(" "+getString(R.string.crushed_nuts_text));
         }
-        if  (four) {
+        if  (forth) {
             toppings.append(" "+getString(R.string.cherries_text));
         }
-        if  (five) {
+        if  (fifth) {
             toppings.append(" "+getString(R.string.orio_cookie_crumbles_text));
         }
         String toast_message = toppings.toString();
@@ -46,33 +46,33 @@ public boolean one,two,three,four,five;
 
 
         if  (((CheckBox) findViewById(R.id.chocolate_syrup_box)).isChecked()) {
-            one = true;
+            first = true;
         }else {
-            one = false;
+            first = false;
         }
 
         if  (((CheckBox) findViewById(R.id.sprinkles_box)).isChecked()) {
-            two = true;
+          second = true;
         }else {
-            two = false;
+            second = false;
         }
 
         if  (((CheckBox) findViewById(R.id.crushed_nuts_box)).isChecked()) {
-            three = true;
+            third = true;
         }else {
-            three = false;
+            third = false;
         }
 
         if  (((CheckBox) findViewById(R.id.cherries_box)).isChecked()) {
-            four = true;
+            forth = true;
         }else {
-            four = false;
+            forth = false;
         }
 
         if  (((CheckBox) findViewById(R.id.orio_box)).isChecked()) {
-            five = true;
+            fifth = true;
         }else {
-            five = false;
+            fifth = false;
         }
 
     }
